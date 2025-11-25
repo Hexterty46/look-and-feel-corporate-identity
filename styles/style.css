@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: var(--milledoni-white);
+  background-color: var(--primary-background-color);
   color: var(--secondary-color);
-  line-height: 1.5;
+  line-height: var(--line-height-text);
 }
 
 header {
