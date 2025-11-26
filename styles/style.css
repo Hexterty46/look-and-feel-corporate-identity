@@ -110,6 +110,7 @@ button p {
     font-size: var(--font-size-title);
     display: block;
     line-height: var(--line-height-text);
+    margin-left: 25px;
   }
 }
 
@@ -119,12 +120,16 @@ button p {
 
 .secondary-search-bg {
   position: relative;
-  display: flex;
+  display: none;
   align-items: center;
   border-radius: 7px;
   padding: 0.5em 1em;
   max-width: 500px;
   margin: 0 auto;
+
+  @media (min-width: 678px) {
+    display: flex;
+  }
 }
 
 .secondary-search-input {
@@ -157,9 +162,9 @@ button p {
 
 .ai-button-secondary {
   position: absolute;
-  right: 1.5em; 
-  height: 43px;
-  width: 43px;
+  right: 1.5em;
+  height: 40px;
+  width: 40px;
   border: none;
   cursor: pointer;
 }
@@ -266,7 +271,7 @@ button p {
   padding: 0.6em;
   border-radius: 8px;
   border: 1px solid var(--secondary-text-color);
-  font-size: var(--font-size-text);
+  font-size: 14.5px;
   background-color: var(--secondary-background-color);
   color: var(--secondary-color);
 }
@@ -285,17 +290,6 @@ button p {
     margin-bottom: 30px;
   }
 }
-
-/* .title-section h2 {
-  font-size: 20px;
-  margin-bottom: 16px;
-  color: var(--secondary-text-color);
-
-  @media (min-width: 678px) {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-} */
 
 .filteren-button {
   display: flex;
@@ -344,7 +338,7 @@ button p {
 }
 
 .producten {
-  gap: 20px;
+  gap: 10px;
   background-color: var(--primary-background-color);
   border-top: 5px solid var(--primary-color);
   border-radius: 5px;
@@ -362,6 +356,14 @@ button p {
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.article-product {
+  width: 208px;
+}
+
+.article-product-img img {
+  width: 208px;
 }
 
 .product {
@@ -571,7 +573,7 @@ footer {
 .footer-text section h3 {
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-standard);
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .email-form {
@@ -622,22 +624,6 @@ footer {
   margin: 30px 0;
 }
 
-.footer-left ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-left li {
-  color: var(--secondary-background-color);
-  margin-bottom: 6px;
-}
-
-.footer-left a {
-  text-decoration: none;
-  color: var(--secondary-background-color);
-}
-
 .site-footer {
   background-color: var(--secondary-color);
   color: var(--secondary-background-color);
@@ -663,7 +649,6 @@ footer {
         li {
           margin-bottom: 0.5rem;
           margin-left: 30px;
-          
 
           a {
             color: var(--secondary-background-color);
