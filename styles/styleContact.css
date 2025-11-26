@@ -17,6 +17,15 @@ form {
   }
 }
 
+/* .google-maps-loacation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map-frame {
+  display: flex;
+} */
+
 .form-about-company {
   border: 2px solid var(--primary-color);
   margin-left: 4px;
