@@ -77,7 +77,7 @@
         />
       </svg>
       <nav>
-        <button aria-label="Creëer je lijst">
+        <button class="list-button" aria-label="Creëer je lijst">
           <p>Creëer je lijst</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@
             />
           </svg>
         </button>
-        <button aria-label="Profiel">
+        <button class="list-button" aria-label="Profiel">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="20"
@@ -170,7 +170,9 @@
       <div class="main-container">
         <aside class="left-sidebar">
           <section class="search-section">
-            <h3>Ik zoek een cadeau voor...</h3>
+            <h3>Im looking for a gift for...<br>
+                 <span class="highlight">my uncle</span>
+                </h3>
             <div class="secondary-search-bg">
               <button type="button" class="ai-button-primary">
                 <svg
@@ -247,7 +249,7 @@
             </form>
           </section>
           <button
-            class="filteren-button"
+            class="filteren-button list-button"
             id="filterenButton"
             aria-label="Filter producten op categorie"
           >
